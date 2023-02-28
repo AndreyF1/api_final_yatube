@@ -1,38 +1,38 @@
 # Yatube project
-Учебный проект по созданию социальной сети: регистрация, авторизация, создание постов, добавление групп, комментарии постов, подписки на авторов.
+Educational project on creating a social network: registration, authorization, creation of posts, adding groups, comments on posts, subscriptions to authors.
 
-## Как запустить проект:
-Клонировать репозиторий и перейти в него в командной строке:
+## How to launch a project:
+Clone the repository and go to it on the command line:
 ```
 git clone git@github.com:{github_username}/api_final_yatube.git
 ```
 ```
 cd api_final_yatube
 ```
-Cоздать и активировать виртуальное окружение:
+Create and activate a virtual environment:
 ```
 python3 -m venv venv
 ```
 ```
 source venv/bin/activate
 ```
-Установить зависимости из файла requirements.txt:
+Install dependencies from a file requirements.txt:
 ```
 python3 -m pip install --upgrade pip
 ```
 ```
 pip install -r requirements.txt
 ```
-Выполнить миграции:
+Migrate:
 ```
 python3 manage.py migrate
 ```
-Запустить проект:
+Launch a project:
 ```
 python3 manage.py runserver
 ```
 
-## Примеры запросов к API
+## Examples of API requests
 `GET` /api/v1/posts/
 ```
 {
